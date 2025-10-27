@@ -211,7 +211,7 @@ public:
 
 int main()
 {
-    std::cout<<"grafo denso: \n\n\n\n\";
+    std::cout<<"grafo denso: \n\n\n\n ";
     Grafo_denso *g = new Grafo_denso(5);
     g->inserir_aresta(1, 2);
     g->inserir_aresta(2, 2);
