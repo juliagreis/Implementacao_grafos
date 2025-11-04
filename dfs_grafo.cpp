@@ -40,7 +40,6 @@ void dfs_recursivo_vertices_e_arestas(std::vector<std::vector<int> >&adj,std::ve
         if(!processados[adj[v][i]]){
             std::cout<<"Aresta "<<v<<"-"<<adj[v][i]<<std::endl;
             dfs_recursivo_vertices_e_arestas(adj,processados,adj[v][i]);
-            
         }
     }
 }
@@ -49,7 +48,6 @@ void dfs_pilha_vertices_e_arestas(std::vector<std::vector<int> >&adj,std::vector
     std::stack<int> pilha;
     pilha.push(v);
     
-
     while(!pilha.empty()){
         v=pilha.top(); pilha.pop();
         
@@ -65,7 +63,6 @@ void dfs_pilha_vertices_e_arestas(std::vector<std::vector<int> >&adj,std::vector
             }
             if(v<adj[v][i])std::cout<<"Aresta "<<v<<"-"<<adj[v][i]<<std::endl;
         }
-        
     }
 }
 
@@ -105,3 +102,7 @@ int main(){
 
     return 0;
 }
+
+//qual a complexidade do dsf usando lista de adjacencia? O(V+E), porque cada vertice é visitado uma vez, bem como cada aresta
+//se usassemos matriz de adjacencia, a complexidade seria O(vˆ2), porque processamos todos os vertuces uma vez, e para
+//cada vertice, percorremos toda a linha da matriz pra descobrir seus vizinhos, e cada linha tem v posicoes

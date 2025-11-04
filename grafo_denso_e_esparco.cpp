@@ -5,7 +5,7 @@
 
 //implementacao via matriz de incidencia, ou seja, vertices x vertices
 
-class Grafo_denso
+class Grafo_denso //muita aresta
 { //implementacao usando matriz de adjacencia
 
 private:
@@ -30,7 +30,7 @@ private:
 public:
     //construtor e destrutor -> irrelevantes
 
-    Grafo_denso(int qntd_vertices)
+    Grafo_denso(int qntd_vertices) 
     {
         num_vertices = qntd_vertices;
         num_arestas = 0;
@@ -125,7 +125,7 @@ public:
     }
 };
 
-class Grafo_esparco
+class Grafo_esparco //pouca aresta
 {
 
     //implementacao usando lista de adjacencia, e nao matriz de adjacencia
