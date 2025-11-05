@@ -20,6 +20,19 @@ bool dfs_bipartido(std::vector<std::vector<int> >&adj,std::vector<int> &cor,int 
     return true;
 }
 
+bool grafo_bipartido(std::vector<std::vector<int> >&adj){
+    int n=adj.size();
+    std::vector<int> cor(n,0);
+    for(int i=0;i<n;i++){
+        if(cor[i]==0){
+            cor[i]=1;
+            if(!dfs_bipartido(adj,cor,i))
+                return false;
+        }
+    }
+    return true;
+}
+
 
 int main(){
 
