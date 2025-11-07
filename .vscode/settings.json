@@ -67,6 +67,7 @@
         "span": "cpp",
         "sstream": "cpp",
         "unordered_map": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "queue": "cpp"
     }
 }

@@ -38,7 +38,7 @@ void dfs_recursivo_vertices_e_arestas(std::vector<std::vector<int> >&adj,std::ve
 
     for(int i=0;i<adj[v].size();i++){
         if(!processados[adj[v][i]]){
-            std::cout<<"Aresta "<<v<<"-"<<adj[v][i]<<std::endl;
+            if(i<v)std::cout<<"Aresta "<<v<<"-"<<adj[v][i]<<std::endl;
             dfs_recursivo_vertices_e_arestas(adj,processados,adj[v][i]);
         }
     }

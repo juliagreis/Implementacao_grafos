@@ -36,7 +36,7 @@ int main(){
                 int i=0;
                 for(char c: linha){
                     if(c=='_') fim=true;;
-                    if(c=='*'){initC=i; initL=j;} //agora eu sei em que posicao o * esta
+                    if(c=='*'){initL=i; initC=j;} //agora eu sei em que posicao o * esta
                     i++;
                 }
                 j++;
